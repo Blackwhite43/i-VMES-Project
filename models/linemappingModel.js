@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const line_mapping_schema = new mongoose.Schema({
-    product: {
+    product_code: {
         type: String
     },
     line: {

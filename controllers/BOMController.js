@@ -7,7 +7,7 @@ let i, j, k;
 for (i=0,j=65;j<=90;i++,j++) {
     alphabets[i] = String.fromCharCode(j);
 }
-exports.createBOM = catchAsync(async (req, res, next) => {
+exports.createBOM = catchAsync(async (req, res) => {
     //let newBOM;
     let newBOMArray = [];
     const ws = await req.body.ws;
