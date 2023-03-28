@@ -3,8 +3,11 @@ const BOMSchema = new mongoose.Schema({
     product: {
         type: String
     },
-    parts: {
-        type: Array
+    part_code: {
+        type: String
+    },
+    qty: {
+        type: Number
     }
 })
 const BOM = mongoose.model('BOM', BOMSchema)
